@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🌐 AFKPal Website
+    url: https://afkpal.com
+    about: Visit the official AFKPal website for general information
+  - name: 🔒 Privacy Policy
+    url: https://afkpal.com/privacy
+    about: Read our privacy policy and data handling practices
+  - name: 💬 Community Discussions
+    url: https://github.com/afksoft/afkpal/discussions
+    about: Join community discussions about AFKPal features and usage

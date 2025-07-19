@@ -1,0 +1,125 @@
+name: ✨ Feature Request
+description: Suggest a new feature or enhancement for AFKPal
+title: "[Feature]: "
+labels: ["enhancement", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! Please provide as much detail as possible to help us understand your request.
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Pre-submission Checklist
+      description: Please confirm you have completed these steps before submitting
+      options:
+        - label: I have searched existing issues to see if this feature has already been requested
+          required: true
+        - label: I have checked the latest version of AFKPal to see if this feature already exists
+          required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Feature Summary
+      description: A brief, clear summary of the feature you'd like to see
+      placeholder: "Add support for..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Description
+      description: What problem would this feature solve? What's currently frustrating or missing?
+      placeholder: "I'm always frustrated when..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe how you'd like this feature to work
+      placeholder: "I would like to be able to..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Solutions
+      description: Have you considered any alternative solutions or workarounds?
+      placeholder: "I've tried... but it doesn't work because..."
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Feature Category
+      description: What category does this feature fall into?
+      options:
+        - Connection & Networking
+        - Video & Audio Quality
+        - User Interface & Experience
+        - Performance & Speed
+        - Security & Privacy
+        - Device Compatibility
+        - File Transfer & Management
+        - Gaming & Controls
+        - Settings & Configuration
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Which platform(s) would this feature affect?
+      options:
+        - iOS (Controller) only
+        - Android (Host) only
+        - Both iOS and Android
+        - Server/Backend
+        - All platforms
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature to you?
+      options:
+        - Critical - I can't use AFKPal effectively without this
+        - High - This would significantly improve my experience
+        - Medium - This would be a nice improvement
+        - Low - This would be a minor convenience
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: Use Cases
+      description: Describe specific scenarios where this feature would be useful
+      placeholder: |
+        1. When I'm gaming, I need to...
+        2. For work presentations, it would help if...
+        3. When sharing my screen with family...
+
+  - type: textarea
+    id: mockups
+    attributes:
+      label: Mockups or Examples
+      description: |
+        Do you have any mockups, wireframes, or examples from other apps?
+        You can attach images by dragging & dropping, selecting, or pasting them.
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context, screenshots, or information about the feature request
+      placeholder: Any other details that might be relevant...

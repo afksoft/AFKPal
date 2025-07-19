@@ -1,0 +1,117 @@
+name: ❓ Question or Help
+description: Ask a question or get help with using AFKPal
+title: "[Question]: "
+labels: ["question", "help-wanted"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Need help with AFKPal? We're here to assist! Please provide details about what you're trying to accomplish.
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Pre-submission Checklist
+      description: Please confirm you have completed these steps before asking
+      options:
+        - label: I have searched existing issues to see if my question has already been answered
+          required: true
+        - label: I have checked the README and documentation
+          required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Question Category
+      description: What is your question about?
+      options:
+        - Initial Setup & Configuration
+        - Connection Issues
+        - Device Compatibility
+        - Performance & Quality
+        - Features & Functionality
+        - Account & Authentication
+        - Network & Security
+        - Troubleshooting
+        - General Usage
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: What would you like to know or what are you trying to accomplish?
+      placeholder: "I'm trying to... but I can't figure out how to..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context & Background
+      description: Provide any relevant background information
+      placeholder: |
+        - What devices are you using?
+        - What have you already tried?
+        - What is your setup like?
+        - Any specific requirements or constraints?
+
+  - type: input
+    id: ios-device
+    attributes:
+      label: iOS Device (if applicable)
+      description: What iOS device are you using?
+      placeholder: "e.g., iPhone 15 Pro, iPad Air, etc."
+
+  - type: input
+    id: ios-version
+    attributes:
+      label: iOS Version (if applicable)
+      description: What version of iOS?
+      placeholder: "e.g., iOS 17.5.1"
+
+  - type: input
+    id: android-device
+    attributes:
+      label: Android Device (if applicable)
+      description: What Android device are you using?
+      placeholder: "e.g., Samsung Galaxy S24, Google Pixel 8, etc."
+
+  - type: input
+    id: android-version
+    attributes:
+      label: Android Version (if applicable)
+      description: What version of Android?
+      placeholder: "e.g., Android 14, Android 13, etc."
+
+  - type: dropdown
+    id: experience
+    attributes:
+      label: Experience Level
+      description: How familiar are you with AFKPal?
+      options:
+        - New user (just getting started)
+        - Beginner (used it a few times)
+        - Intermediate (regular user)
+        - Advanced (power user)
+    validations:
+      required: true
+
+  - type: textarea
+    id: attempts
+    attributes:
+      label: What You've Tried
+      description: What steps have you already taken to solve this?
+      placeholder: |
+        1. I tried...
+        2. I looked at...
+        3. I searched for...
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Any other details that might help us assist you better
+      placeholder: Screenshots, error messages, network setup details, etc.
