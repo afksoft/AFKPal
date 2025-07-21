@@ -73,7 +73,7 @@ Have an idea for improving AFKPal? We'd love to hear it!
 
 ## Platform-Specific Information
 
-### iOS Users
+### iOS Users (Control Devices)
 - Requires iOS 13.0 or later
 - Works on iPhone, iPad, and iPod touch
 - Supports both WiFi and cellular connections
@@ -82,11 +82,6 @@ Have an idea for improving AFKPal? We'd love to hear it!
 - Requires Android 7.0 (API level 24) or later
 - Needs Developer Options enabled for initial setup
 - Works best with Android 10+ for enhanced features
-
-### Android Users (Control Devices)
-- Can control other Android devices
-- Same requirements as host devices
-- Supports local ADB connections
 
 ## Privacy & Security
 
